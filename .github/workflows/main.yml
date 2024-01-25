@@ -28,7 +28,7 @@ jobs:
             sudo apt-get install nginx -y 
             sudo mkdir -p /var/www/html
             sudo chown -R ${{ secrets.EC2_USERNAME }}
-            sudo chmod -R 755 /var/www/html
+            sudo chmod -R 777 /var/www/html
 
       - name: copy file via ssh password
         uses: appleboy/scp-action@v0.1.7
